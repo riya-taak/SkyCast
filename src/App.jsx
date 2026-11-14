@@ -4,6 +4,7 @@ import "./style.css";
 import humidity from "./assets/humidity.png";
 import rain from "./assets/rain.jpeg";
 import wind from "./assets/wind.png";
+import search from "./assets/search.png"
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
@@ -55,7 +56,7 @@ export default function App() {
             onKeyDown={(e) => e.key === "Enter" && fetchWeather()}
           />
           <button className="searchBtn" onClick={fetchWeather}>
-            Search
+           <img  id= "search" src={search} alt="search" />
           </button>
         </div>
 
