@@ -56,7 +56,7 @@ export default function App() {
             onKeyDown={(e) => e.key === "Enter" && fetchWeather()}
           />
           <button className="searchBtn" onClick={fetchWeather}>
-           <img  id= "search" src={search} alt="search" />
+           <img id="search" src={search} alt="search" />
           </button>
         </div>
 
